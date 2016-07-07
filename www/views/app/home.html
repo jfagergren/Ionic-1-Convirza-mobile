@@ -1,0 +1,50 @@
+<ion-view class="bookmarks-view">
+  <ion-nav-title>
+    <span>Home - Dashboard</span>
+  </ion-nav-title>
+  <ion-content>
+
+
+  </ion-content>
+
+  <ion-content>
+    <div class="button-bar">
+      <a class="button active">Today</a>
+      <a class="button">Yest</a>
+      <a class="button">Last 7</a>
+      <a class="button">MTD</a>
+    </div>
+
+
+    <div class="card" ng-controller="BarCtrl">
+      <div class="item item-divider">
+        A bar chart
+      </div>
+      <div class="item item-text-wrap">
+        <canvas id="base" class="chart-horizontal-bar"
+                chart-data="data" chart-labels="labels"></canvas>
+      </div>
+    </div>
+
+    <div class="card" ng-controller="PieCtrl">
+      <div class="item item-divider">
+        A pie chart
+      </div>
+      <div class="item item-text-wrap">
+        <canvas id="doughnut" class="chart chart-doughnut"
+                chart-data="data" chart-labels="labels"></canvas>
+      </div>
+    </div>
+
+    <div class="card" ng-controller="PolarAreaCtrl">
+      <div class="item item-divider">
+        A Polar Area chart
+      </div>
+      <div class="item item-text-wrap">
+        <canvas id="polar-area" class="chart chart-polar-area"
+                chart-data="data" chart-labels="labels" chart-options="options"></canvas>
+      </div>
+    </div>
+  </ion-content>
+
+</ion-view>
