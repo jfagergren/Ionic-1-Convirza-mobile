@@ -247,7 +247,7 @@ angular.module('your_app_name', [
     url: "/settings",
     views: {
       'menuContent': {
-        templateUrl: "views/app/settings.html",
+        templateUrl: "views/app/settings/settings.html",
         controller: 'SettingsCtrl'
       }
     }
@@ -268,6 +268,46 @@ angular.module('your_app_name', [
     views: {
       'menuContent': {
         templateUrl: "views/app/reports/report1.html",
+        controller: 'FeedEntriesCtrl'
+      }
+    }
+  })  
+    
+  .state('app.report2', {
+    url: "/reports/report2",
+    views: {
+      'menuContent': {
+        templateUrl: "views/app/reports/report2.html",
+        controller: 'FeedEntriesCtrl'
+      }
+    }
+  })
+  
+  .state('app.report3', {
+    url: "/reports/report3",
+    views: {
+      'menuContent': {
+        templateUrl: "views/app/reports/report3.html",
+        controller: 'FeedEntriesCtrl'
+      }
+    }
+  })
+    
+  .state('app.report4', {
+    url: "/reports/report4",
+    views: {
+      'menuContent': {
+        templateUrl: "views/app/reports/report4.html",
+        controller: 'FeedEntriesCtrl'
+      }
+    }
+  })
+    
+  .state('app.report5', {
+    url: "/reports/report5",
+    views: {
+      'menuContent': {
+        templateUrl: "views/app/reports/report5.html",
         controller: 'FeedEntriesCtrl'
       }
     }
