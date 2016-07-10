@@ -289,9 +289,9 @@ angular.module('your_app_name.controllers', [])
 
 		$http.get('feeds-categories.json').success(function(response) {
 
-			$ionicLoading.show({
-				template: 'Loading entries...'
-			});
+//			$ionicLoading.show({
+//				template: 'Loading entries...'
+//			});
 
 			var category = _.find(response, {id: categoryId }),
 					source = _.find(category.feed_sources, {id: sourceId });

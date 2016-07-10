@@ -261,6 +261,16 @@ angular.module('your_app_name', [
         controller: 'SettingsCtrl'
       }
     }
+  })  
+      
+  .state('app.report1', {
+    url: "/reports/report1",
+    views: {
+      'menuContent': {
+        templateUrl: "views/app/reports/report1.html",
+        controller: 'FeedEntriesCtrl'
+      }
+    }
   })
 
   .state('app.forms', {
