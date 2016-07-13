@@ -252,7 +252,47 @@ angular.module('your_app_name', [
       }
     }
   })
-
+  
+  .state('app.settings-campaign', {
+    url: "/settings-campaign",
+    views: {
+      'menuContent': {
+        templateUrl: "views/app/settings/settings-campaign.html",
+        controller: 'SettingsCtrl'
+      }
+    }
+  })
+  
+  .state('app.settings-group', {
+    url: "/settings-group",
+    views: {
+      'menuContent': {
+        templateUrl: "views/app/settings/settings-group.html",
+        controller: 'SettingsCtrl'
+      }
+    }
+  })
+  
+  .state('app.settings-customization', {
+    url: "/settings-customization",
+    views: {
+      'menuContent': {
+        templateUrl: "views/app/settings/settings-customization.html",
+        controller: 'SettingsCtrl'
+      }
+    }
+  })
+  
+  .state('app.settings-integration', {
+    url: "/settings-integration",
+    views: {
+      'menuContent': {
+        templateUrl: "views/app/settings/settings-integration.html",
+        controller: 'SettingsCtrl'
+      }
+    }
+  })
+  
   .state('app.reports-list', {
     url: "/reports/reports-list",
     views: {
